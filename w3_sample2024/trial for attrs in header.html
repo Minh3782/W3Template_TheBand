@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="Draft_nav-css.css">
+</head>
+<body>
+       <!-- NOTICE: vấn đề nằm ở thuộc tính position: relative
+        => khi đặt position:relative cho #nav hay li(More) thì #subnav(position:absolute) sẽ xuất hiện cùng hàng với #nav
+        => chỉ cần đặt position: absolute cho #subnav thì thuộc tính position sẽ phụ thuộc vào thẻ html => #subnav sẽ xuất hiện dưới #nav
+        => đặt #subnav bên trong li(More) sẽ dễ căn chỉnh vị trí của #subnav
+        -->
+        <p>Một header chứa các <span style="background-color: cyan;">thẻ li</span></p>
+        <div id="main"> 
+              <ul id="nav">
+                     <li>Home</li>
+                     <li>Band</li>
+                     <li>Tour</li>
+                     <li>Contact</li>
+                     <li>More
+                            <ul id="subnav">
+                                   <li>Merchandise</li>
+                                   <li>Extras</li>
+                                   <li>Media</li>
+                            </ul>
+                     </li>
+              </ul>
+       </div>
+       <div id="d2"> Một header chứa <span style="background-color: cyan;">nav(gồm thẻ li>a) & subnav(gồm thẻ li)</span> <span style="color: red">/NAV & SUBNAV TÁCH RIÊNG/</span>
+              <ul id="nav2">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Band</a></li>
+                     <li><a href="#">Tour</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">More</a></li>
+                     <ul id="subnav2">
+                            <li>Merchandise</li>
+                            <li>Extras</li>
+                            <li>Media</li>
+                     </ul>
+              </ul>
+       </div>
+
+       <p id="p3" >Một header chứa <span style="background-color: cyan;">các thẻ li>a </span></p>
+       <div id="d3"> 
+              <ul id="nav3">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Band</a></li>
+                     <li><a href="#">Tour</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">More</a>
+                            <ul id="subnav3">
+                                   <li><a href="#">Merchandise</a></li>
+                                   <li><a href="#">Extras</a></li>
+                                   <li><a href="#">Media</a></li>
+                            </ul>
+                     </li>
+              </ul>
+       </div>
+       <p style="outline-style: solid; outline-color: green; margin: 72px 0;">subnav3 tự động xuất hiện dưới More</p>
+       
+       <p>Cấu trúc giống dạng 3, KHÁC css <span style="color: red">/PHIÊN BẢN GIỐNG VIDEO TUTORIAL/</span></p>
+       <div id="d4"> 
+              <ul id="nav4">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Band</a></li>
+                     <li><a href="#">Tour</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">More</a>
+                            <ul id="subnav4">
+                                   <li><a href="#">Merchandise</a></li>
+                                   <li><a href="#">Extras</a></li>
+                                   <li><a href="#">Media</a></li>
+                            </ul>
+                     </li>
+              </ul>
+              <p style="position: absolute;">Thẻ p có thuộc tính absolute</p>
+              <p style="position: relative"> Thẻ p relative đè lên thẻ absolute </p>
+       </div>
+       <div id="slider">
+              <p style="padding-top: 30px; color:beige"> đảm bảo xuất hiện trên cùng một dòng => lấy đường line dưới cùng làm lề => đẩy các thành phần lên cao(phía trên) so với lề dưới của văn bản </p>
+              <h1>Vấn đề:</h1>
+              <ol>
+                     <li>Làm thế nào để các phần tử con của header có thể thừa hưởng giá trị height: 46.5px</li>
+                     <li>Thuộc tính display: block hay display: inline-block có ảnh hưởng đến việc thừa hưởng giá trị height: 46.5 không ?</li> <span>không</span>
+                     <li>Thuộc tính position có liên quan đến vấn đề hay không ?</li><span>không</span>
+                     <li>Không thể set line-height là số ??.5px => height trả về ?? </li>
+              </ol>
+       </div>
+</body>

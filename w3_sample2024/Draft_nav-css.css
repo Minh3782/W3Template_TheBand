@@ -1,0 +1,146 @@
+* {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+}
+
+:root {
+       --height: 46px;
+       --color: #fff;
+}
+
+#main {
+       height: var(--height);
+       background-color: black;
+}
+#nav>li {
+       display: block;
+       float: left; /*khi có định dạng là block => float để set bullist nằm ngang*/
+       /*Trong TRƯỜNG HỢP này: li(mặc định có display: block)*/
+       color: var(--color);
+       /* line-height: var(--height); */
+       padding: 0 12px;
+       /*list-style-type HOẶC display:block/inline-block => loại bỏ dấu bullist*/
+}
+
+#nav>li:hover {
+       color: #000;
+       background-color: #ccc;
+       cursor: pointer;
+}
+
+#subnav>li {
+       list-style-type: none;
+}
+
+#d2 {
+       margin: 200px 0;
+}
+
+#nav2 {
+       height: var(--height);
+       background-color: black; 
+}
+/*⁡⁢⁣⁣DẠNG ĐƠN GIẢN⁡*/
+#nav2>li {
+       line-height: var(--height);
+       padding: 0 12px;
+       list-style-type: none;
+       display: inline-block;
+}
+#nav2 li:hover {
+       background-color: #ccc;
+}
+
+#nav2 a {
+       text-decoration: none;
+       color: var(--color);
+}
+
+#subnav2 {
+       position: absolute;
+}
+
+/*⁡⁢⁣⁣DẠNG 3⁡*/
+
+#p3 {
+       margin-top: 200px;
+}
+
+#d3 {
+       height: var(--height);
+       background-color: black; 
+}
+
+#nav3>li {
+       display: block;
+       float: left;
+}
+
+#nav3>li>a {
+       color:#fff;
+       line-height: var(--height);
+       padding: 0 14px;
+       text-decoration: none;
+}
+
+
+/*⁡⁢⁣⁣DẠNG 4⁡*/
+
+#d4 {
+       height: var(--height);
+       background-color: black;
+}
+
+#d4 #nav4 a {
+       text-decoration: none;
+}
+
+#d4 #nav4>li {
+       display: inline-block;
+       position: relative;
+}
+
+#nav4>li>a {
+       display: inline-block;
+       color:#fff;
+       line-height: var(--height);
+       padding: 0 20px;
+       text-transform: uppercase;
+}
+
+#nav4>li:hover>a,
+#subnav4 li:hover a {
+       color: #000;
+       background-color: #ccc;
+}
+
+#subnav4 {
+       position: absolute;
+       list-style-type: none;
+       /* top: 62px; */
+       background-color: #fff;
+       box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+#subnav4>li>a {
+       display: block;
+       color: #000;
+       background-color: #fff;
+       line-height: 38.5px;
+       padding: 0 12px;
+}
+
+#slider {
+       min-height: 300px;
+       background-color: #333;
+       color:beige
+}
+
+#slider h1 {
+       background-color: rgb(255, 67, 98);
+}
+/* 
+#slider ol {
+       list-style-type: lower-roman;
+} */

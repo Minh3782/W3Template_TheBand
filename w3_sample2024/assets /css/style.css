@@ -1,0 +1,49 @@
+*{
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;      
+}
+
+#header{
+       height: 46px;
+       background-color: black;
+}
+
+#header #nav li {
+       font-family: Helvetica, Arial, sans-serif;  
+}
+
+#header #nav>li {
+       display: inline-block; /*không thể đặt display: block BỞI VÌ kích thước của li(More) & subnav khác nhau*/
+       position: relative;
+}
+
+#header #nav a {
+       color: #fff;  
+       text-decoration: none;
+       line-height: 46px;  
+       padding: 0 14px;
+}
+
+#subnav {     /*đang để subnav gồm các thẻ li*/
+       position: absolute;
+       list-style-type: none;
+       /* display: none;  */
+       color: #000;
+       background-color: #fff;
+       /* width: 115.5px; */
+}
+
+#subnav li {
+       padding: 8px 16px;
+}
+
+#header li:hover { /*khi chỉ set #header li:hover => thẻ li(More) sẽ bị ảnh hưởng nguyên khối(gồm các thành phần khác)*/
+       background-color: #ccc;
+       color:#000;
+}
+
+/* #slider {
+       min-height: 300px;
+       background-color: #333;
+} */

@@ -1,0 +1,93 @@
+/*
+*{padding:0;
+    margin:0;
+    box-sizing: border-box;}
+  #header{
+      height:50px;
+      background-color: black;
+  }
+  #nav>li{display:inline-block;position:relative}
+  #nav li:hover #subnav{display:block}
+  #nav li a{
+      line-height: 50px;
+      display:inline-block;
+      padding:0 50px;
+      text-decoration: none;
+  }
+  #nav>li>a{color:#fff; text-transform: uppercase;}
+ 
+  #nav>li:hover>a,#nav #subnav li:hover a  {
+      color:#000;
+      background-color:#ccc;
+  }
+  #nav #subnav {
+    position:absolute;
+    background:rgba(255, 183, 183, 0.808);
+    top:100%;
+    min-width:200px;
+    display:none;
+    list-style-type: none;
+  }
+  #nav #subnav a{line-height: 32px;
+    width:100%;
+    padding:0 15px;
+    color:rgb(37, 219, 119)
+}
+
+  html{font-family:Arial, Helvetica, sans-serif}
+
+  #header .search-btn{display:none;}
+  #header{position:fixed;top:0;width:100%;}
+  #slider{
+    background:url("hình ảnh/ảnh mẫu lấy trực tiếp từ web.jpg") top center /cover no-repeat;
+    position:relative;
+    margin-top:50px;
+    padding-top:50%;
+  }
+  #slider .text-content{position:absolute;bottom:34px;color:#fff;text-align:center;left:50%;transform:translateX(-50%)}
+  #slider .text-heading{font-weight:600;font-size:30px; }
+  #slider .text-description{font-size:16px;margin-top:16px;}
+*/
+*{box-sizing: border-box;}
+html{font-family:sans-serif;}
+.places-list{
+  background-color:black;
+  height:800px;
+  overflow:hidden;
+}
+.place-item{
+  float:left;
+  width:calc(100%/3);
+  padding:0 15px;
+  /*display:inline-block;
+  display:flex;
+  flex-direction: column;*/  
+}
+.place-img{
+  display:block;
+  width:100%;
+}
+.place-img:hover{background:black;opacity:0.6}
+.place-body{
+  background:white;
+  padding:15px;
+  width:100%;
+  font-size: 15px;
+}
+.place-head{
+  font-weight: 600;
+}
+.place-time{
+  color:#757575;
+  padding:15px 0;
+}
+.place-desc{
+  padding-bottom:15px;
+}
+.place-buy-btn{
+  text-decoration: none;
+  background:black;
+  color:white;
+  padding:11px 16px;
+  display:inline-block;
+}
