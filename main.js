@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () { 
     buyTicket();
     imageSlider();  
+    menuToggle();
 });
 
 function buyTicket (){           
@@ -84,6 +85,23 @@ function imageSlider() {
         heading.textContent = imgCaptions[currentImg];
         description.textContent = imgDescriptions[currentImg];
     }, 4000);
+    
+    image.onload = () => {
+      slider.innerHTML = "";
+      slider.appendChild(image);
+      slider.appendChild(textContent);
+    };
+}
+
+
+//nav-menu-click.js
+function menuToggle() {
+  const toggleMenu = document.querySelector('.search-btn');
+  const navMenu = document.querySelector('#nav');
+
+  toggleMenu.addEventListener('click', function () {
+    navMenu.classList.toggle('show');
+  });
 }
 
 
